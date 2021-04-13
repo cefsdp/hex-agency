@@ -2,4 +2,69 @@
 .BoosterLesJE {
     background-color: #0000FF;
     height: 100vh;
+    overflow: hidden;
+    display: flex;
+    .divtxt {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        margin-top: 50px;
+        margin-left: 75px;
+        .txt {
+            .title {
+                width: 540px;
+                height: 196px;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 800;
+                font-size: 96px;
+                line-height: 98px;
+                color: #FFFFFF;
+                margin-bottom: 20px;
+            }
+            .description {
+                width: 540px;
+                height: 96px;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 32px;
+                color: #FFFFFF;
+                margin-bottom: 20px;
+            }
+            .btn-1 {
+                background-color: #FFBA09;
+                width: 196px;
+                height: 62px;
+                .txt {
+                    font-size: 20px;
+                    font-family: 'Poppins', sans-serif;
+                }
+            }
+        }
+    }
+    .divformes {
+        width: 50%;
+        .formes {
+            height: 757px;
+            width: 730px;
+            margin-top: 120px;
+            margin-left: 75px;
+        }
+    }
+    .form1 {
+        position: absolute;
+        top: 165px;
+        left: 1305px;
+    }
+    .form2 {
+        position: absolute;
+        top: 419px;
+        left: 830px;
+    }
+    .form3 {
+        position: absolute;
+        top: 614px;
+        left: 1347px;
+    }
 }
