@@ -1,12 +1,25 @@
-.navbar-lewagon {
+.navbardiv {
+  display: flex;
   justify-content: space-between;
-  background: white;
+  position: fixed;
+  align-items: center;
+  height: 72px;
+  width: 100%;
+  background-color: #ffffff;
+  .logo {
+    margin-left: 100px;
+  }
+  .links {
+    .link {
+      color: #0000FF;
+      font-family: 'Manrope', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      margin-left: 30px;
+    }
+  }
+  .btn-1 {
+    margin-right: 100px;
+  }
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
-}
-
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
-}

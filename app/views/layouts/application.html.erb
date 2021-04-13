@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>HexAgency</title>
+    <title>Hex Agency</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -10,9 +10,15 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700&family=Poppins:ital,wght@0,700;1,700&display=swap');
+    </style>
   </head>
 
   <body>
+    <%= render 'shared/navbar' %>
     <%= yield %>
   </body>
 </html>
