@@ -8,10 +8,10 @@
     </div>
     <div class="divformes">
         <div class="formes">
-            <%= render 'components/multipleforms' %>
+            <div><%= render 'components/multipleforms' %></div>
         </div>
     </div>
-    <div class="form1"><%= render 'components/form1' %></div>
-    <div class="form2"><%= render 'components/form2' %></div>
-    <div class="form3"><%= render 'components/form3' %></div>
+    <div class="form1"><div class="form"><%= render 'components/form1', locals: {rotating: "rotating"} %></div></div>
+    <div class="form2"><div class="form"><%= render 'components/form2' %></div></div>
+    <div class="form3"><div class="form"><%= render 'components/form3' %></div></div>
 </div>
