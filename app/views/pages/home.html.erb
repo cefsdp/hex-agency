@@ -1,44 +1,128 @@
-<div class="BoosterLesJE">
-    <div class="divtxt">
-        <div class="txt">
-            <div class="title">Booster les J.E. 🚀</div>
-            <div class="description">Nous accompagnons les Junior-Entreprises dans la construction d’une image de marque professionnelle et dans l’optimisation de leur performance. </div>
-            <div class="btn-1"><div class="txt">J'accélère !</div></div>
+<div class="homecontainer">
+    <div class="BoosterLesJE">
+        <div class="divTexte">
+            <div class="texte">
+                <div class="title">Booster les J.E. 🚀</div>
+                <div class="description">Nous accompagnons les Junior-Entreprises dans la construction d’une image de marque professionnelle et dans l’optimisation de leur performance. </div>
+                <div class="btn-1"><div class="txt">J'accélère !</div></div>
+            </div>
+        </div>
+        <div class="divForme">
+            <div class="form4"><div class="form"><%= render 'components/multipleforms' %></div></div>
+            <div class="form1"><div class="form"><%= render 'components/form1' %></div></div>
+            <div class="form2"><div class="form"><%= render 'components/form2' %></div></div>
+            <div class="form3"><div class="form"><%= render 'components/form3' %></div></div>
         </div>
     </div>
-    <div class="divformes">
-        <div class="formes">
-            <div><%= render 'components/multipleforms' %></div>
+
+    <div class="NotreEpertise">
+        <div class="Title">
+            <div class="Titre">Nos Expertises 🔬</div>
+            <div class="Description">Pour tout vous dire, on ne recul devant aucun projet mais on nous a conseillé de mettre quelques exemples.</div>
+        </div>
+        <div class="Cartes">
+            <div class="Carte">
+                <div class="emoji">🖌</div>
+                <div class="titre">Charte Graphique</div>
+                <div class="texte">On crée ou modernise tout ou partie de votre charte pour développer une marque forte.</div>
+            </div>
+            <div class="Carte">
+                <div class="emoji">🖥</div>
+                <div class="titre">Site Web</div>
+                <div class="texte">On refond ou crée votre site web pour qu’il soit la vitrine de vos compétence.</div>
+            </div>
+            <div class="Carte">
+                <div class="emoji">🤳</div>
+                <div class="titre">Réseaux Sociaux</div>
+                <div class="texte">On s’occupe de vos réseaux pour une campagne, un évènement ou pour la fame.</div>
+            </div>
+            <div class="Carte">
+                <div class="emoji">💸</div>
+                <div class="titre">Performance Commerciale</div>
+                <div class="texte">On challenge vos processus, on améliore vos documents d’études et de communication pro.</div>
+            </div>
+            <div class="Carte">
+                <div class="emoji">📊</div>
+                <div class="titre">Indicateurs</div>
+                <div class="texte">On vous aide à créer des indicateurs, faciliter leurs lectures et les utiliser pour performer.</div>
+            </div>
+            <div class="Carte">
+                <div class="emoji">⚙</div>
+                <div class="titre">Automatisation</div>
+                <div class="texte">Vous avez déjà dit: “Ah c’est chiant de faire ça” ? Bon bah on s’en occupe.</div>
+            </div>
+        </div>
+        <div class="btn-2"><div class="txt">J’ai un projet à vous confier !</div></div>
+    </div>
+
+    <div class="OnBosseAvecEux">
+        <div class="Texte">
+            <div class="Titre">On bosse avec eux 🤝</div>
+            <div class="Description">Ils ont adoré, on a adoré, tout est dit.</div>
+        </div>
+        <div class="DivLogo">
+            <div class="Logos">
+                <div class="Logo"><%= image_tag("Logo/pumpkin.png", width:"132", height:"46.2") %></div>
+                <div class="Logo"><%= image_tag("Logo/angersshoping.png", width:"127", height:"42.12") %></div>
+                <div class="Logo"><%= image_tag("Logo/estaca.png", width:"100", height:"41.03") %></div>
+                <div class="Logo"><%= image_tag("Logo/joko.png", width:"101", height:"39") %></div>
+                <div class="Logo"><%= image_tag("Logo/ejc.png", width:"53", height:"48") %></div>
+                <div class="Logo"><%= image_tag("Logo/juniorestaca.png", width:"54", height:"63") %></div>
+            </div>
         </div>
     </div>
-    <div class="form1"><div class="form"><%= render 'components/form1', locals: {rotating: "rotating"} %></div></div>
-    <div class="form2"><div class="form"><%= render 'components/form2' %></div></div>
-    <div class="form3"><div class="form"><%= render 'components/form3' %></div></div>
+
+    <div class="Compteur">
+        <div class="content">
+            <div class="title">
+                <div class="titre">Le compteur le plus important !</div>
+                <div class="description">Notre but est de pouvoir accompagner toutes les structures du mouvement. <br> Alors on va compter ça avec attention !</div>
+            </div>
+            <div class="Donnees">
+                <div class="Donnee borded"><div class="Chiffre">2</div><div class="Texte">Juniors accompagnées</div></div>
+                <div class="Donnee borded"><div class="Chiffre">2</div><div class="Texte">Projets réalisés</div></div>
+                <div class="Donnee borded"><div class="Chiffre">1%</div><div class="Texte">Du mouvement accompagné</div></div>
+                <div class="Donnee"><div class="Chiffre">198</div><div class="Texte">Structures à accompagner</div></div>
+            </div>
+            <div class="texte">
+                <div class="titre">C’est pas fameux pour le moment 😅</div>
+                <div class="description">Pour que ça aille plus vite on offrira 10% aux 5 premières structures qui nous donnent le code : EARLYBIRD </div>
+            </div>
+            <div class="btn">
+                <div class="btn-3"><div class="txt">Je suis la suivante !</div></div>
+            </div>
+        </div>
+        <div class="form6"><div class="form"><%= render 'components/form6' %></div></div>
+    </div>
+
+    <div class="QuiSommesNous">
+    </div>
+
+    <div class="NosRealisations">
+    </div>
+
+
 </div>
 
-<div class="NosExpertises">
-    <div class="Title">
-        <div class="gauche">
-            <%= render 'components/multipleforms2b' %>
+<!-- <div class=""></div> -->
+
+<!-- <div class="homecontainer">
+    <div class="BoosterLesJE">
+        
+----------
+        <div class="divFormes4"></div>
+        <div class="divFormes123"></div>
+----------
+        <div class="divformes">
+            <div class="formes">
+                <div><%= render 'components/multipleforms' %></div>
+            </div>
         </div>
-        <div class="centre">
-            <div class="titre">Nos Expertises 🔬</div>
-            <div class="description">Pour tout vous dire, on ne recul devant aucun projet mais on nous a conseillé de mettre quelques exemples.</div>
-        </div>
-        <div class="droite">
-            <%= render 'components/multipleforms2a' %>
-        </div>
+        <div class="form1"><div class="form"><%= render 'components/form1', locals: {rotating: "rotating"} %></div></div>
+        <div class="form2"><div class="form"><%= render 'components/form2' %></div></div>
+        <div class="form3"><div class="form"><%= render 'components/form3' %></div></div>
     </div>
-    <div class="cards">
-        <div class="card">card</div>
-        <div class="card">card</div>
-        <div class="card">card</div>
-    </div>
-    <div class="btn-1">
-        <div class="txt">J'ai un projet à vous confier !</div>
-    </div>
+
 </div>
 
-<div>
-</div>
-
+-->

@@ -33,6 +33,18 @@
 	-webkit-animation-iteration-count: infinite;
 }
 
+.floating-form6{
+	animation-delay: 3s;
+	animation-name: floating;
+	-webkit-animation-name: floating;
+
+	animation-duration: 4s;	
+	-webkit-animation-duration: 4s;
+
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
 @keyframes floating {
 	0% {
 		transform: translateY(0%);	

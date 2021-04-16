@@ -13,3 +13,36 @@
         color: #FFFFFF;
     }
 }
+
+.btn-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0000FF;
+    height: 40px;
+    border-radius: 8px;
+    padding: 0px 10px;
+    .txt {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        color: #FFFFFF;
+    }
+}
+
+.btn-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    height: 62px;
+    width: 307px;
+    border-radius: 8px;
+    padding: 0px 10px;
+    .txt {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        color: #0000FF;
+    }
+}

@@ -1,0 +1,44 @@
+.OnBosseAvecEux{
+    height: 224px;
+    width: 100%;
+    padding: 0% 10%;
+    background-color: #FFFFFF;
+    overflow-y: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .Texte {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .Titre {
+            font-family: Poppins;
+            font-size: 48px;
+            font-weight: 800;
+            color: #0000FF;
+        }
+        .Description {
+            font-family: Poppins;
+            font-size: 18px;
+            font-weight: 400;
+            color: #000000;
+        }
+    }
+    .DivLogo {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        .Logos {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            .Logo {
+                width: 135px;
+                height: 70px;
+                margin: 0px 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
