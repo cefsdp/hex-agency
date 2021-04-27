@@ -1,0 +1,77 @@
+.QuiSommesNous {
+    width: 100%;
+    padding: 0% 10%;
+    background-color: #FFFFFF;
+    overflow-y: hidden;
+    .Titre {
+        font-family: Poppins;
+        font-size: 48px;
+        font-weight: 800;
+        color: #0000FF;
+    }
+    .Cartes {
+        z-index: 50;
+        display: flex;
+        .Carte {
+            padding: 3%;
+            width: 651px;
+            margin: 0% 2%;
+            background: rgba(0, 0, 255, 0.1);
+            box-shadow: inset 7.02px -7.02px 7.02px rgba(0, 0, 214, 0.4), inset -7.02px 7.02px 7.02px rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(70.2px);
+            /* Note: backdrop-filter has minimal browser support */
+            border-radius: 28px;
+            .Identite {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                .nom {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    color: #0000FF;
+                    font-size: 64px;
+                    font-weight: 900;
+                }
+                .avatar {
+                    width: 208px;
+                    height: 208px;
+                    border: solid;
+                    border-color: #0000FF;
+                    border-width: 3px;
+                }
+            }
+            .Section {
+                .titre {
+                    font-family: Poppins;
+                    font-size: 30px;
+                    font-weight: 700;
+                    font-style: italic;
+                    color: #0000FF;
+                }
+                .liste {
+                    ul {
+                        list-style: "👉";
+                        font-family: Poppins;
+                        font-size: 22px;
+                        font-weight: 500;
+                        color: #0000FF;
+                    }
+
+                }
+            }
+        }
+    }
+    .form7 {
+        position: relative;
+        height: 1px;
+        width: 0px;
+        z-index: 0;
+        top: -2rem;
+        left: 20rem;
+    }
+}
+
+
+
