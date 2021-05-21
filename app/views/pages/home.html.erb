@@ -97,7 +97,6 @@
 
     <div class="QuiSommesNous">
         <div class="Titre">Qui sommes-nous 👋</div>
-        <div class="form7"><div class="form"><%= render 'components/form7' %></div></div>
         <div class="Cartes">
             <div class="Carte">
                 <div class="Identite">
@@ -180,6 +179,85 @@
     </div>
 
     <div class="NosRealisations">
+        <div class="Titre">Nos Réalisations 🏆</div>
+        <div class="carousel">
+            <div class="carousel_item carousel_item--visible">
+                <div class="carrousel_NosRealisations">
+                    <div class="texte">
+                        <div class="titre">ESSCA Junior Conseil</div>
+                        <div class="content">
+                            <div class="paragraphe">Lors de notre mandat chez ESSCA Junior Conseil on n’a que très peu dormi. Mais par contre on a eu des résultats !</div>
+                            <ul>
+                                <li>Entrée en L30</li>
+                                <li>Record de C.A. avec + 40% VS 2019</li>
+                                <li>Automatisation de processus</li>
+                                <li>Refonte du site web qui a généré 57% du CA</li>
+                                <li>Labelisation ISO 9001</li>
+                                <li>Norme RGPD européenne</li>
+                                <li>7 Nouveaux auditeurs</li>
+                                <li>Refonte de la charte graphique</li>
+                                <li>Une communication innovante (+1 post avec 30k de reach)</li>
+                                <li>Organisation du CNA avec +1000 inscrits</li>
+                            </ul>
+                        </div>
+                        <div class="link">Ecoutez le ETIC podcast sur notre mandat
+                            <svg width="23" height="14" viewBox="0 0 23 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.6232 1.70711C14.2327 1.31658 14.2327 0.683417 14.6232 0.292893C15.0137 -0.0976311 15.6469 -0.0976311 16.0374 0.292893L22.0374 6.29289C22.428 6.68342 22.428 7.31658 22.0374 7.70711L16.0374 13.7071C15.6469 14.0976 15.0137 14.0976 14.6232 13.7071C14.2327 13.3166 14.2327 12.6834 14.6232 12.2929L18.9161 7.99998H1.34111C0.782731 7.99998 0.330078 7.55227 0.330078 6.99998C0.330078 6.4477 0.782731 5.99998 1.34111 5.99998H18.9161L14.6232 1.70711Z" fill="#0000FF"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="img">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel_item">
+                <div class="carrousel_NosRealisations">
+                    <div class="texte">
+                        <div class="titre">Angers Shopping</div>
+                        <div class="content">
+                            <div class="paragraphe">🎯 Objectif : Attirer des clients sur une nouvelle plateforme digitale pendant le premier confinement.</div>
+                            <br>
+                            <ul>
+                                <li>Accompagnement sur la stratégie marketing</li>
+                                <li>Création d’un plan de communication B2C axé réseaux sociaux.</li>
+                                <li>Détérmination des clients cibles</li>
+                            </ul>
+                            <br>
+                            <div class="paragraphe">🏅 764 000€ de C.A. sur les 8 premiers mois</div>
+                            <div class="paragraphe">🏅 + 1080 abonnés sur facebook</div>
+                            <div class="paragraphe">🏅 + 1300 abonnés sur Instagram</div>
+                        </div>
+                        <div class="link">Lire un extrait du plan de communication 
+                            <svg width="23" height="14" viewBox="0 0 23 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.6232 1.70711C14.2327 1.31658 14.2327 0.683417 14.6232 0.292893C15.0137 -0.0976311 15.6469 -0.0976311 16.0374 0.292893L22.0374 6.29289C22.428 6.68342 22.428 7.31658 22.0374 7.70711L16.0374 13.7071C15.6469 14.0976 15.0137 14.0976 14.6232 13.7071C14.2327 13.3166 14.2327 12.6834 14.6232 12.2929L18.9161 7.99998H1.34111C0.782731 7.99998 0.330078 7.55227 0.330078 6.99998C0.330078 6.4477 0.782731 5.99998 1.34111 5.99998H18.9161L14.6232 1.70711Z" fill="#0000FF"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="img">
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel_action">
+                <div class="carousel_button" id="carousel_button--prev">
+                    <svg width="50" height="56" viewBox="0 0 50 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.66503 29.0214C3.66503 30.1761 3.66504 33.0628 5.66504 34.2175L32.7889 49.8775C34.7889 51.0322 37.2889 49.5888 37.2889 47.2794L37.2889 15.9595C37.2889 13.6501 34.7889 12.2067 32.7889 13.3614L5.66503 29.0214Z" fill="#FFBA09"/>
+                        <path d="M4.5 21.7826C2.5 22.9373 2.5 25.824 4.5 26.9787L31.6239 42.6387C33.6239 43.7934 36.1239 42.35 36.1239 40.0406L36.1239 8.72069C36.1239 6.41129 33.6239 4.96792 31.6239 6.12262L4.5 21.7826Z" fill="#0000FF"/>
+                    </svg>                 
+                </div>
+                <div class="carousel_button" id="carousel_button--next">
+                    <svg width="53" height="56" viewBox="0 0 53 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M43.9951 29.0214C45.9951 30.1761 45.9951 33.0628 43.9951 34.2175L16.8713 49.8775C14.8713 51.0322 12.3713 49.5888 12.3713 47.2794L12.3713 15.9595C12.3713 13.6501 14.8713 12.2067 16.8713 13.3614L43.9951 29.0214Z" fill="#FFBA09"/>
+                        <path d="M48.0684 21.7826C50.0684 22.9373 50.0684 25.824 48.0684 26.9787L20.9445 42.6387C18.9445 43.7934 16.4445 42.35 16.4445 40.0406L16.4445 8.72069C16.4445 6.41129 18.9445 4.96792 20.9445 6.12262L48.0684 21.7826Z" fill="#0000FF"/>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="carousel_indicators">
+                <div class="carousel_indicator_circle carousel_indicator--active"></div>
+                <div class="carousel_indicator_circle carousel_indicator--inactive"></div>
+            </div>
+        </div>
     </div>
 
 
