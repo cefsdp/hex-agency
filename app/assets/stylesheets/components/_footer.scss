@@ -4,21 +4,29 @@
     align-items: center;
     height: 7vh;
     background-color: #0000FF;
-    .logo {
-      padding-left: 100px;
-    }
-    .texte {
+    .part {
+      width: 33%;
+      display: flex;
+      .logo {
+        padding-left: 100px;
+      }
+      .texte {
+        width: 100%;
+        text-align: center;
         color: #D9DBE1;
         font-family: 'Poppins', sans-serif;
         font-weight: 600;
         font-size: 15px;
-    }
-    .copyright {
+      }
+      .copyright {
+        width: 100%;
+        text-align: right;
         color: #D9DBE1;
         font-family: 'Poppins', sans-serif;
         font-weight: 500;
         font-size: 14px;
         padding-right: 100px;
+      }
     }
   }
   

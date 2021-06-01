@@ -4,7 +4,7 @@
             <div class="texte">
                 <div class="title">Booster les J.E. 🚀</div>
                 <div class="description">Nous accompagnons les Junior-Entreprises dans la construction d’une image de marque professionnelle et dans l’optimisation de leur performance. </div>
-                <div class="btn-1"><div class="txt">J'accélère !</div></div>
+                <div class="btn-1 contactForm"><div class="txt">J'accélère !</div></div>
             </div>
         </div>
         <div class="divForme">
@@ -52,7 +52,7 @@
                 <div class="texte">Vous avez déjà dit: “Ah c’est chiant de faire ça” ? Bon bah on s’en occupe.</div>
             </div>
         </div>
-        <div class="btn-2"><div class="txt">J’ai un projet à vous confier !</div></div>
+        <div class="btn-2 contactForm"><div class="txt">J’ai un projet à vous confier !</div></div>
     </div>
 
     <div class="OnBosseAvecEux">
@@ -89,7 +89,7 @@
                 <div class="description">Pour que ça aille plus vite on offrira 10% aux 5 premières structures qui nous donnent le code : EARLYBIRD </div>
             </div>
             <div class="btn">
-                <div class="btn-3"><div class="txt">Je suis la suivante !</div></div>
+                <div class="btn-3 contactForm"><div class="txt">Je suis la suivante !</div></div>
             </div>
         </div>
         <div class="form6"><div class="form"><%= render 'components/form6' %></div></div>
@@ -260,28 +260,74 @@
         </div>
     </div>
 
-
-</div>
-
-<!-- <div class=""></div> -->
-
-<!-- <div class="homecontainer">
-    <div class="BoosterLesJE">
-        
-----------
-        <div class="divFormes4"></div>
-        <div class="divFormes123"></div>
-----------
-        <div class="divformes">
-            <div class="formes">
-                <div><%= render 'components/multipleforms' %></div>
+    <div class="VousAvezUnProjet">
+        <div class="background">
+            <div class="logo">
+                <svg width="247" height="81" viewBox="0 0 247 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M246.953 37.039C246.818 45.2404 239.251 54.6324 227.089 54.897V31.7476L227.132 8.86288C228.754 -2.51339 245.017 -3.30708 246.909 8.86288C246.954 15.5211 247.061 30.4778 246.953 37.039Z" fill="#FFBA09"/>
+                    <path d="M227.089 9.78886C227.089 4.38262 231.431 0 236.954 0C242.476 0 246.953 4.38262 246.953 9.78886V31.7476C246.953 37.1539 242.476 41.5365 236.954 41.5365C231.431 41.5365 227.089 37.1539 227.089 31.7476V9.78886Z" fill="#FFBA09"/>
+                    <ellipse cx="237.045" cy="70.2361" rx="9.95534" ry="9.95681" fill="#FFBA09"/>
+                    <path d="M71.729 1.07617V80.9998H47.4178V49.8431H24.3112V80.9998H0V1.07617H24.3112V29.8622H47.4178V1.07617H71.729Z" fill="white"/>
+                    <path d="M106.978 20.9442V30.8782H131.071V49.7302H106.978V61.0189H134.356V80.9998H82.6672V1.07617H134.356V20.9442H106.978Z" fill="white"/>
+                    <path d="M192.907 80.9998L178.671 60.2287L166.844 80.9998H139.138L164.653 39.7962L138.042 1.07617H166.844L180.532 21.0571L191.921 1.07617H219.627L194.55 41.4895L221.708 80.9998H192.907Z" fill="white"/>
+                </svg>
+            </div>
+            <div class="content">
+                <div class="txt">Alors, vous avez un projet ?</div>
+                <div class="btn contactForm">Oui, on se rencontre !</div>
             </div>
         </div>
-        <div class="form1"><div class="form"><%= render 'components/form1', locals: {rotating: "rotating"} %></div></div>
-        <div class="form2"><div class="form"><%= render 'components/form2' %></div></div>
-        <div class="form3"><div class="form"><%= render 'components/form3' %></div></div>
     </div>
 
 </div>
 
--->
+<div id="Layout" class="contactFormLayout">
+    <div class="header">
+        <div class="close" id=closeLayoutBtn><i class="fas fa-times"></i></div>
+    </div>
+    <div class="content">
+        <div class="titre">Maintenant, parlons de votre projet</div>
+        <div class="forms">
+            <div class="formContact">
+                <%= simple_form_for @contact do |f| %>
+                    <div class="part">
+                        <div class="item2"><%= f.input :nom, label: false, placeholder: 'Nom' %></div>
+                        <div class="item2"><%= f.input :prenom, label: false, placeholder: 'Prénom' %></div>
+                    </div>
+                    <div class="part">
+                        <div class="item2"><%= f.input :telephone, label: false, placeholder: 'Téléphone' %></div>
+                        <div class="item2"><%= f.input :email, label: false, placeholder: 'Email' %></div>
+                    </div>
+                    <div class="part">
+                        <div class="item2"><%= f.input :entreprise, label: false, placeholder: 'Junior' %></div>
+                        <div class="item2"><%= f.input :poste, label: false, placeholder: 'Poste' %></div>
+                    </div>
+                    <div class="part">
+                        <div class="item2"><%= f.input :budget, as: :select, collection: ["Budget", "< 1000€", "1000€ - 2000€", "2500€ - 5000€", "> 5000€"], label: false, selected: 1  %></div>
+                    </div>
+                    <div class="part">
+                        <div class="item"><%= f.input :message, as: :text, label: false, placeholder: 'Votre Message', input_html: { class: "post-input-pop-up" }, wrapper_html: { class: "text-area-wrapper"} %></div>
+                    </div>
+                    <div class="part">
+                        <div class="item"><%= f.input :codepromo, label: false, placeholder: 'Code Promo' %></div>
+                    </div>
+                    <div class="part">
+                        <div class="btn"><div class="arrow"><i class="fas fa-arrow-right"></i></div><%= f.submit "Envoyer", id: "Creation" %></div>
+                    </div>
+                <% end %>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="logo">
+            <svg width="171" height="56" viewBox="0 0 171 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M170.968 25.6072C170.874 31.2773 165.635 37.7705 157.216 37.9535V21.949L157.245 6.12743C158.368 -1.73765 169.627 -2.28637 170.937 6.12743C170.968 10.7306 171.042 21.0711 170.968 25.6072Z" fill="#FFBA09"/>
+                <path d="M157.216 6.7676C157.216 3.02996 160.221 0 164.045 0C167.868 0 170.968 3.02996 170.968 6.7676V21.949C170.968 25.6866 167.868 28.7166 164.045 28.7166C160.221 28.7166 157.216 25.6866 157.216 21.949V6.7676Z" fill="#FFBA09"/>
+                <ellipse cx="164.108" cy="48.5581" rx="6.89216" ry="6.88372" fill="#FFBA09"/>
+                <path d="M49.6586 0.744171V56H32.8277V34.4596H16.8308V56H0V0.744171H16.8308V20.6456H32.8277V0.744171H49.6586Z" fill="white"/>
+                <path d="M74.062 14.4801V21.348H90.7412V34.3815H74.062V42.186H93.0156V56H57.2311V0.744171H93.0156V14.4801H74.062Z" fill="white"/>
+                <path d="M133.551 56L123.695 41.6397L115.507 56H96.326L113.991 27.5136L95.5679 0.744171H115.507L124.984 14.5581L132.869 0.744171H152.05L134.688 28.6843L153.49 56H133.551Z" fill="white"/>
+            </svg>
+        </div>
+    </div>
+</div>

@@ -1,2 +1,0 @@
-class FormContact < ApplicationRecord
-end
