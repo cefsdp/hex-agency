@@ -1,6 +1,5 @@
 .carousel {
     overflow: hidden;
-    min-height: 70%;
     max-width: 100%;
     height: fit-content;
     position: relative;
@@ -40,7 +39,7 @@
     .carousel_indicators {
         display: flex;
         position: absolute;
-        top: 93%;
+        top: 95%;
         width: 100%;
         align-content: center;
         justify-content: center;
